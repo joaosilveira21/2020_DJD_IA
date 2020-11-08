@@ -1,0 +1,41 @@
+using System;
+
+namespace luckybastard
+{
+    class Program
+    {
+
+        static void Main(string[] args)
+        {
+            Random r = new Random();
+
+            int playerHealth = 100;
+            int currentHealth = playerHealth;
+            int blow;
+
+            Console.WriteLine("-----------FIRST ATTACK----------");
+            blow = r.Next(1, (int)(currentHealth * 0.98f));
+            Console.WriteLine("* You were hit by an enemy for " + blow + " damage");
+            currentHealth = currentHealth - blow;
+            Console.WriteLine("* Your current life is " + currentHealth + "!");
+            Console.WriteLine("---------------------------------");
+
+            Console.WriteLine("-----------SECOND ATTACK----------");
+            blow = r.Next(1, (int)(currentHealth * 0.98f));
+            Console.WriteLine("* You were hit by an enemy for " + blow + " damage");
+            currentHealth = currentHealth - blow;
+            Console.WriteLine("* Your current life is " + currentHealth + "!");
+            Console.WriteLine("---------------------------------");
+
+            Console.WriteLine("-----------THIRD ATTACK----------");
+            blow = currentHealth - 1;
+            Console.WriteLine("* You were hit by an enemy for " + blow + " damage");
+            currentHealth = currentHealth - blow;
+            Console.WriteLine("* Your current life is " + currentHealth + "! Lucky Bastard!!");
+            Console.WriteLine("---------------------------------");
+
+
+
+        }
+    }
+}

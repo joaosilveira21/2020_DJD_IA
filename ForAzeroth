@@ -1,0 +1,28 @@
+using System;
+
+namespace ForAzeroth
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string playerName = "Cleiton";
+            int playerLevel = 15;
+            string playerRace = "Orc";
+            char playerGender = 'm';
+            string playerFaction = "Alliance";
+            string playerClass = "Hunter";
+
+            Console.WriteLine("--------------PLAYER STATS-----------------");
+            Console.WriteLine("Nickname:" + playerName);
+            Console.WriteLine("Level:" + playerLevel);
+            Console.WriteLine("Race:" + playerRace);
+            Console.WriteLine("Gender:" + playerGender);
+            Console.WriteLine("Faction:" + playerFaction);
+            Console.WriteLine("Class:" + playerClass);
+            Console.WriteLine("-------------------------------------------");
+
+
+        }
+    }
+}

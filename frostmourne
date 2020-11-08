@@ -1,0 +1,26 @@
+using System;
+
+namespace frostmourne
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string weaponName = "Tunder";
+            string weaponRarity = "Rare";
+            int weaponDamage = 100;
+            string targetClass = "Mage";
+            bool twohand = true;
+            string description = " A small weapon design for experienced wizards that can provide a large damage in your path";
+
+            Console.WriteLine("----------WEAPON STATS----------");
+            Console.WriteLine("Name:" + weaponName);
+            Console.WriteLine("Rarity:" + weaponRarity);
+            Console.WriteLine("Damage:" + weaponDamage);
+            Console.WriteLine("Target Class:" + targetClass);
+            Console.WriteLine("TwoHanded:" + twohand);
+            Console.WriteLine("Description:" + description);
+            Console.WriteLine("--------------------------------");
+        }
+    }
+}

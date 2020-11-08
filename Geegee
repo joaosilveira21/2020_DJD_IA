@@ -1,0 +1,17 @@
+using System;
+
+namespace geegee
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int playerHealth = 100;
+            int singleAttack = playerHealth;
+
+            Console.WriteLine("Enemy caused " + singleAttack + " damage with the hit");
+            Console.WriteLine("Current Health:"+(playerHealth-singleAttack));
+            Console.WriteLine("gg");
+        }
+    }
+}

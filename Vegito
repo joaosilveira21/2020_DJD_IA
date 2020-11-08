@@ -1,0 +1,27 @@
+using System;
+
+namespace vegito
+{
+    class Program
+    {
+
+        static void Main(string[] args)
+        {
+            Random r = new Random();
+            
+            int gokuAttack = r.Next(1,100);
+            int gokuDefenses = r.Next(1, 100);
+            int gokuIntellect = r.Next(1, 100);
+
+            int vegitaAttack = r.Next(1, 100);
+            int vegitaDefense = r.Next(1, 100);
+            int vegitaIntellect = r.Next(1, 100);
+
+            Console.WriteLine("----------FUSION----------");
+            Console.WriteLine("ATTACK:" + (gokuAttack + vegitaAttack)/2);
+            Console.WriteLine("DEFENSE:"+(gokuDefenses+vegitaDefense)/2);
+            Console.WriteLine("INTELLECT:"+(gokuIntellect+vegitaIntellect)/2);
+            Console.WriteLine("--------------------------");
+        }
+    }
+}

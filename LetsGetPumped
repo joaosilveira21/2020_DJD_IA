@@ -1,0 +1,21 @@
+using System;
+
+namespace letsgetpumped
+{
+    class Program
+    {
+
+        static void Main(string[] args)
+        {
+            Random r = new Random();
+
+            int attackPower = r.Next(1, 100);
+            int powerAttack = (int)((int)attackPower*1.5);
+
+            Console.WriteLine("-----YOU FOUND A ATTACK POWERUP!!-----");
+            Console.WriteLine("* Current Attack:" + attackPower);
+            Console.WriteLine("* Attack + Powerup:" + powerAttack);
+            Console.WriteLine("--------------------------------------");
+        }
+    }
+}
